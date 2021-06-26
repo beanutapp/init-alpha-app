@@ -1,0 +1,117 @@
+// Variables
+@white: #FFF;
+@black: #000;
+@text-color: #444;
+@border-radius: 4px;
+@brand-color: #e55039;
+
+html { 
+	box-sizing: border-box;
+	font-size: 10px;
+	line-height: 1.42857143;
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: linear-gradient(to top, #09203f 0%, #1c3e58 100%);
+
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+
+main {
+	margin: auto;
+}
+
+.modal {
+	background: @brand-color;
+	color: @white;
+	width: 60rem;
+	border-radius: @border-radius;
+	text-align: center;
+	padding: 10rem 4rem 4rem 4rem;
+	position: relative;
+	
+	&__icon {
+		position: absolute;
+    top: -3rem;
+    left: 50%;
+    margin-left: -165px;
+    background: @brand-color;
+    padding: 3rem 12rem 0 12rem;
+    border-radius: 50%;
+	}
+	
+	&__heading {
+		text-transform: uppercase;
+		font-size: 2.6rem;
+	}
+	
+	p { font-size: 1.5rem; }
+}
+
+.email-box {
+	position: absolute;
+	bottom: -2rem;
+	left: 50%;
+	margin-left: -20rem;
+	width: 40rem;
+	
+	&__input {
+		color: lighten(@black, 20%);
+		display: block;
+		width: 100%;
+		height: 4rem;
+		border-radius: @border-radius;
+		border: 1px solid #FFF;
+		font-size: 1.4rem;
+		padding: 1rem;
+	}
+	
+	&__button {
+  	appearance: none;
+		border: none;
+		background: transparent;
+		font-size: 2rem;
+		position: absolute;
+		color: @brand-color;
+		right: .8rem;
+		top: .8rem;
+		padding: 0;
+		
+		&:hover,
+		&:focus {
+			color: darken(@brand-color, 20%);
+		}
+	}
+	
+}
+
+
+@media only screen and (max-width: 600px) {
+	.modal {
+		width: 30rem;
+			&__icon {
+			margin-left: -105px;
+			padding: 3rem 6rem 0 6rem;
+			border-radius: 50%;
+		}
+	}
+	
+	.email-box {
+		margin-left: -12.5rem;
+		width: 25rem;
+	}
+	
+	
+}

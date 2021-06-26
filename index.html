@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Howdy</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">  
+   <link rel="stylesheet" href="css/main.css">  
+   <link rel="stylesheet" href="form-style.css"> 
+   <link rel="stylesheet" href="modal__icon.css">  
+ 
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body id="top">
+
+   <section id="home">
+
+ <div class="overlay"></div><div class="gradient-overlay"></div> 
+
+<div class="home-content-table">	   
+
+		   <div class="home-content-tablecell">
+		   	<div class="row">
+		   		<div class="col-twelve">		   			
+			  			<div class="home-bottom-text">
+				  			<h1>
+								please enter your ZIP code: <br>	
+
+			  			</div> <!-- end home-bottom-text -->		
+						   <div class="home-bottom-text">
+							   <h3>
+								<body><ul class="menu">
+								</ul>
+							  </nav>
+							  <div class="">
+								<h2 class=""></h2>
+								<br>
+						  <link rel="stylesheet" href="form-style.css"/>
+						  <div class="register-user-container">
+						  </div>
+							  <div class="address-ref-locatity-field">
+								  <div class="cs-input">
+									  <input placeholder="123456" maxlength="6" type="number" autocomplete="postal-code" value="" spellcheck="false" data-ms-editor="true" id="zip-input">
+								  </div>
+								  <div class="user-login-button">
+									  <button class="primary cs-button button" disabled="" id="continue-button">
+										  <span>Continue</span>
+									  </button>
+								  </div>	
+							  <script>
+							  document.getElementById("zip-input").addEventListener('change', () => document.getElementById("zip-input").value == '' ? document.getElementById("continue-button").setAttribute("disabled", "") : document.getElementById("continue-button").removeAttribute("disabled"));
+							  document.getElementById("zip-input").addEventListener('keydown', () => document.getElementById("zip-input").value == '' ? document.getElementById("continue-button").setAttribute("disabled", "") : document.getElementById("continue-button").removeAttribute("disabled"));
+							  document.getElementById("zip-input").addEventListener('paste', () => document.getElementById("zip-input").value == '' ? document.getElementById("continue-button").setAttribute("disabled", "") : document.getElementById("continue-button").removeAttribute("disabled"));
+							  document.getElementById("zip-input").addEventListener('input', () => document.getElementById("zip-input").value == '' ? document.getElementById("continue-button").setAttribute("disabled", "") : document.getElementById("continue-button").removeAttribute("disabled"));
+							  document.getElementById("continue-button").addEventListener('click', () => {document.location = 'zip/' + document.getElementById("zip-input").value + '.html'});
+						  </script>
+						   <br>	
+						</h1>
+
+							   </h3>
+						   </div> <!-- end home-bottom-text -->
+					</div> <!-- end col-twelve --> 
+				</div> <!-- end row --> 
+			</div> <!-- end home-content-tablecell --> 		   
+		 </div> <!-- end home-content-table -->   
+	</section> <!-- end home -->
+		   </div> <!-- end home-content-tablecell --> 
+		   		   
+		</div> <!-- end home-content-table -->   
+   </section> <!-- end home -->
+      <div id="go-top">
+		   <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-UpArrow"></i></a>
+		</div>		
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
